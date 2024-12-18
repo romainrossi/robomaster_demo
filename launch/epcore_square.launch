@@ -1,0 +1,17 @@
+<launch>
+  <arg name="name" default=""/>
+  <arg name="model" default="ep"/>
+  <arg name="joy_index" default="0"/>
+
+  <push-ros-namespace namespace="$(var name)"/>
+
+  <include file="$(find-pkg-share robomaster_ros)/launch/main.launch">
+    <arg name="model" value="ep"/>
+    <arg name="chassis_timeout" value="0.1"/>
+    <arg name="chassis_twist_to_wheel_speeds" value="true"/>
+    <arg name="video_h264" value="1"/>
+    <arg name="conn_type" value="ap"/>
+  </include>
+</launch>
+
+
