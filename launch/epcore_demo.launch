@@ -11,6 +11,8 @@
     <arg name="chassis_twist_to_wheel_speeds" value="true"/>
     <arg name="video_h264" value="1"/>
     <arg name="conn_type" value="ap"/>
+    <arg name="vision_targets" value='["marker:red"]'/>
+    <!--arg name="vision_targets" value='["marker:red", "line:blue"]'/-->
   </include>
 </launch>
 

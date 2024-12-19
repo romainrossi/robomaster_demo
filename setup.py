@@ -26,7 +26,8 @@ setup(
     entry_points={
         'console_scripts': [
             "square = robomaster_demo.square:main",
-            "traj = robomaster_demo.traj:main"
+            "traj = robomaster_demo.traj:main",
+            "react = robomaster_demo.react:main"
         ],
     },
 )
